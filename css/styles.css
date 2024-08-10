@@ -11,3 +11,39 @@ form {
 aside {
     padding: 48px;
 }
+
+.button {
+    border: none;
+    background-color: chartreuse;
+    border-radius: 4px;
+}
+
+.btn-bb {
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+.bg-hitung {
+    background-color: chartreuse;
+}
+
+.bg-reset {
+    background-color: crimson;
+}
+
+input[type=number] 
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+}
+
+footer {
+text-align: center;
+}
