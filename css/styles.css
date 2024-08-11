@@ -6,7 +6,7 @@ main {
 }
 form {
     padding: 12px;
-    background-color: aquamarine;
+    background-color: gray;
 } 
 aside {
     padding: 48px;
@@ -14,7 +14,7 @@ aside {
 
 .button {
     border: none;
-    background-color: chartreuse;
+    background-color: gray;
     border-radius: 4px;
 }
 
