@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background-color: wheat;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,18 +26,16 @@
                 <input type="radio" id="Laki-Laki" name="Jenis Kelamin" value="Pria">Pria<label for="Pria"></label>
                 <input type="radio" id="Perempuan" name="Jenis Kelamin" value="Wanita">Wanita<label for="Wanita"></label>
             </div>
-            <div class="btn-bb">
-                <h3>Berat Badan (kg)</h3>
-                <input type="number" id="bb">
-                <h3>Usia (tahun)</h3>
-                <input type="number" id="usia">
-                <h3>Tinggi Badan (cm)</h3>
-                <input type="number" id="tb">
-            </div>
-            <div>
-                <button class="button bg-hitung">Hitung BMI</button>
-                <button class="button bg-reset">Reset</button>
-            
+
+            <div class="input-section">
+                <label for="weight">Berat Badan (kg)</label>
+                <input type="number" id="weight" placeholder="Masukan berat badan">
+                <label for="yeard">Usia (tahun)</label>
+                <input type="number" id="height" placeholder="Masukan Usia">
+                <label for="height">Tinggi Badan (cm)</label>
+                <input type="number" id="height" placeholder="Masukan tinggi badan">
+                <button class="btn-hitung" onclick="calculateBMI()" id="button bg-hitung"> Hitung BMI</button>
+                <button class="btn-reset" onclick="resetBMI()" id="button bg-reset"> Reset </button>
             </div>
             </form>
 
@@ -45,15 +43,14 @@
             <article>
             <header>
                 <h2>Keunggulaan Fitur</h2>
-                <br>
                    <p> 1. Menghitung berat badan </p>
                    <p> 2. Menentukan kategori berat badan ideal atau tidak </p> 
                    <p> 3. Mempersiapkan program penurunan berat badan </p>
-
+                   <br>
                    <p>  Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.</p>  
-
-                   <p>  Kalkulator akan memberikan Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum, Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/M.</p>
             </br>
+                   <br><p>  Kalkulator akan memberikan Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum, Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/M.</p>
+        </br>
             </header>
             </article>
         </aside>
@@ -63,12 +60,9 @@
             <header>
                 <h2>Hasil</h2>
                 <form>
-                    <p>Berat Badan </p>
-                 <script>
-                    hasil = "bb / tb"
-                 </script>
+                    <div class="result-section" id="result-section"></div>
                 </form>
-                <p> Hasil BMI diantara 23 dan 25 </p>
+                <br> Hasil BMI diantara 23 dan 25 </br>
                 <p> Anda berada di dalam kategori overweight atau berat badan berlebih.
                     Cara terbaik untuk menurunkan berat badan adalah dengan mengatur kalori makanan yang dikonsumsi dan berolahraga.
                     Jika BMI anda berada dalam kategori ini maka Anda dianjurkan untuk menurunkan berat badan hingga batas normal.
@@ -76,7 +70,7 @@
                 <button class="konsultasi">Konsultasi Ahli Gizi Via Aplikasi</button>
                 <button class="registrasi">Registrasi Online Ahli Gizi</button>
 
-            <p> BMI tidak sepenuhnya mwakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang. Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan Anda.</p>
+            <br> BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang. Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan Anda.</br>
 
             <form style="text-align: center;"> 
                <div> <h4> Beberapa penyakit yang berasal dari kegemukan</h4>
@@ -88,6 +82,7 @@
                 <button class="konsultasi">Konsultasi Dokter Via Aplikasi</button>
                 <button class="registrasi">Registrasi Online Sekarang</button>
             </div>
+            <script src="js\script.js"></script>
             </form>
             </header>
             

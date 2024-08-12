@@ -1,18 +1,18 @@
 .main-title {
     text-align: center;
-    background-color: aqua;
-    border-radius: 6px;
     border: none;
 }
 main {
     display: flex;
-    background-color: wheat;
+    background-color: cornsilk;
     border-radius: 4px;
     border: none;
 }
 form {
     padding: 12px;
     background-color: beige;
+    border: none;
+    border-radius: 4px;
 } 
 aside {
     padding: 48px;
@@ -27,20 +27,23 @@ aside {
 .btn-bb {
     margin-top: 24px;
     margin-bottom: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.bg-hitung {
+.btn-hitung {
     background-color: cyan;
-    color: white;
+    border: none;
     padding: 4px;
     font-size: 12px;
+    border-radius: 4px;
 }
 
-.bg-reset {
+.btn-reset {
     background-color: crimson;
-    color: white;
     padding: 4px;
     font-size: 12px;
+    border-radius: 4px;
+    border: none;
 }
 
 input[type=number] 
@@ -63,6 +66,7 @@ input[type=number]
     background-color: cyan;
     padding: 4px;
     font-size: 12px;
+    margin: 4px;
 }
 
 .konsultasi {
@@ -72,6 +76,37 @@ input[type=number]
     background-color: cyan;
     padding: 4px;
     font-size: 12px;
+    margin: 4px;
+}
+
+.result-section {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+}
+
+.input-section {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+br {
+    margin: 1px;
+    padding: 1px;
 }
 
 footer {
