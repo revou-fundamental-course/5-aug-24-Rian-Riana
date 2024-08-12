@@ -18,6 +18,58 @@ aside {
     padding: 48px;
 }
 
+.input-section {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+}
+
+.result-section {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+}
+
+.registrasi {
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color: cyan;
+    padding: 4px;
+    font-size: 12px;
+    margin: 4px;
+}
+
+.konsultasi {
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color: cyan;
+    padding: 4px;
+    font-size: 12px;
+    margin: 4px;
+}
+
+input[type=number] 
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+}
+
 .button {
     border: none;
     background-color: beige;
@@ -44,58 +96,6 @@ aside {
     font-size: 12px;
     border-radius: 4px;
     border: none;
-}
-
-input[type=number] 
-{
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 14px;
-}
-
-.registrasi {
-    border: none;
-    border-radius: 4px;
-    color: white;
-    background-color: cyan;
-    padding: 4px;
-    font-size: 12px;
-    margin: 4px;
-}
-
-.konsultasi {
-    border: none;
-    border-radius: 4px;
-    color: white;
-    background-color: cyan;
-    padding: 4px;
-    font-size: 12px;
-    margin: 4px;
-}
-
-.result-section {
-    margin-top: 20px;
-    text-align: center;
-    font-size: 18px;
-    color: #333;
-}
-
-.input-section {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 14px;
 }
 
 p {
