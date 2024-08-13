@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalkulator BMI</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/script.js"></script>
+    <script src="js/script.js"></script> 
 </head>
 <body>
     <header>
@@ -47,7 +47,7 @@
                     <br>
                     <p>Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.</p>
                     <br>
-                    <p>Kalkulator akan memberikan Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum, Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/M.</p>
+                    <p>Kalkulator akan memberikan Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum, Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/M<sup>2</sup>.</p>
                 </header>
             </article>
         </aside>
@@ -57,8 +57,14 @@
                 <header>
                     <h2>Hasil</h2>
                     <form style="display: flexbox;">
-                        <div id="result-section" class="result-section"></div>
-                        <button>Download Hasil BMI</button>
+                        <div id="result-section" class="result-section">
+                            <article id="resetArea">
+                            <h4 style="color: #666;" id="bmi-result" class="bmi-result"></h4>
+                            <p id="bmi-value" class="bmi-value"></p>
+                            <p id="bmi-category" class="bmi-category"></p>
+                            </article>
+                            <button class="btn-download">Download Hasil BMI</button>
+                        </div>
                     </form>
                     <br> Hasil BMI diantara 23 dan 25 </br>
                     <p>Anda berada di dalam kategori overweight atau berat badan berlebih. Cara terbaik untuk menurunkan berat badan adalah dengan mengatur kalori makanan yang dikonsumsi dan berolahraga. Jika BMI Anda berada dalam kategori ini maka Anda dianjurkan untuk menurunkan berat badan hingga batas normal.</p>

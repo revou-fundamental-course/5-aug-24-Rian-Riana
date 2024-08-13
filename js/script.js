@@ -5,34 +5,43 @@ function calculateBMI(event) {
     var height = document.getElementById('height').value / 100;
     var weight = document.getElementById('weight').value;
 
-    console.log('Height:', height, 'Weight:', weight);
+    
     
     if (height > 0 && weight > 0) {
         var bmi = weight / (height * height);
-        var resultText = 'BMI Anda adalah ' + bmi.toFixed(2);
-        
+        var resultText = '';
+        var categoryText = '';
+
         if (bmi < 18.5) {
-            resultText += ' (Kekurangan berat badan)';
+            categoryText = 'kekurangan berat badan';
+            resultText = 'Berat Badan Kurang';
         } else if (bmi < 24.9) {
-            resultText += ' (Normal)';
+            categoryText = 'Berat Badan Normal';
+            resultText = 'Berat Badan Normal';
         } else if (bmi < 29.9) {
-            resultText += ' (Kelebihan berat badan)';
+            categoryText = 'berat badan berlebih';
+            resultText = 'Berat Badan Lebih';
         } else {
-            resultText += ' (Obesitas)';
+            categoryText = 'Berat Badan Obesitas';
+            resultText = 'Berat Badan Obesitas';
         }
         
-        console.log('Result:', resultText);
-
-        document.getElementById('result-section').innerHTML = resultText;
+        
+        
+        document.getElementById('bmi-result').innerHTML = 'Hasil ' + resultText;
+        document.getElementById('bmi-value').innerHTML = bmi.toFixed(2);
+        document.getElementById('bmi-category').innerHTML = 'Anda memiliki ' + categoryText;
     } else {
-        document.getElementById('result-section').innerHTML = 'Masukkan tinggi dan berat badan yang valid.';
+        document.getElementById('bmi-value').innerHTML = '';
+        document.getElementById('bmi-category').innerHTML = 'Masukkan tinggi dan berat badan yang valid.';
     }
 }
 
-function resetBMI(event) {
-    event.preventDefault(); // Mencegah halaman di-refresh
 
+function resetBMI(event) {
     document.getElementById('height').value = '';
+    document.getElementById('age').value = '';
     document.getElementById('weight').value = '';
-    document.getElementById('result-section').innerHTML = '';
+    document.getElementById('btn-reset').reset() = '';
+    
 }
