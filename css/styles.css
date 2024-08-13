@@ -1,3 +1,4 @@
+/*style.css*/
 .main-title {
     text-align: center;
     border: none;
@@ -107,7 +108,7 @@ input[type=number]
 
 .result-container {
     text-align: center;
-    background-color: #f0f8ff; /* Light blue background */
+    background-color: #f0f8ff; 
     padding: 20px;
     border-radius: 8px;
     margin-top: 20px;
@@ -125,7 +126,7 @@ input[type=number]
 }
 
 .btn-download {
-    background-color: #4CAF50; /* Green background */
+    background-color: #4CAF50; 
     color: white;
     padding: 10px 20px;
     border: none;

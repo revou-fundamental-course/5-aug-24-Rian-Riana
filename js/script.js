@@ -5,7 +5,7 @@ function calculateBMI(event) {
     var height = document.getElementById('height').value / 100;
     var weight = document.getElementById('weight').value;
 
-    
+    console.log()
     
     if (height > 0 && weight > 0) {
         var bmi = weight / (height * height);
@@ -38,10 +38,23 @@ function calculateBMI(event) {
 }
 
 
-function resetBMI(event) {
+function resetBMI() {
     document.getElementById('height').value = '';
     document.getElementById('age').value = '';
     document.getElementById('weight').value = '';
-    document.getElementById('btn-reset').reset() = '';
-    
+    document.getElementById('bmi-result').innerText = '';
+    document.getElementById('bmi-value').innerText = '';
+    document.getElementById('bmi-category').innerText = '';
+}
+function showAlertKonsul() {
+    alert("Silahkan konsultasi ke dokter terdekat") ;
+}
+function showAlertRegist() {
+    alert("Silahkan registrasi disini") ;
+}
+function showAlertKonsulGizi() {
+    alert("Silahkan konsultasi Gizi disini") ;
+}
+function showAlertRegistAhli() {
+    alert("Silahkan registrasi ahli disini") ;
 }

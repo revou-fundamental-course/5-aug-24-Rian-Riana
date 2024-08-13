@@ -22,8 +22,8 @@
             <form>
                 <div>
                     <h3>Jenis Kelamin</h3>
-                    <input type="radio" id="Laki-Laki" name="Jenis Kelamin" value="Pria">Pria<label for="Pria"></label>
-                    <input type="radio" id="Perempuan" name="Jenis Kelamin" value="Wanita">Wanita<label for="Wanita"></label>
+                    <input type="radio" id="Laki-Laki" name="Jenis-Kelamin" value="Pria">Pria<label for="Pria"></label>
+                    <input type="radio" id="Perempuan" name="Jenis-Kelamin" value="Wanita">Wanita<label for="Wanita"></label>
                 </div>
 
                 <div class="input-section">
@@ -56,20 +56,18 @@
             <section>
                 <header>
                     <h2>Hasil</h2>
-                    <form style="display: flexbox;">
+                    <form id="hasil" style="display: flexbox;">
                         <div id="result-section" class="result-section">
-                            <article id="resetArea">
                             <h4 style="color: #666;" id="bmi-result" class="bmi-result"></h4>
                             <p id="bmi-value" class="bmi-value"></p>
                             <p id="bmi-category" class="bmi-category"></p>
-                            </article>
                             <button class="btn-download">Download Hasil BMI</button>
                         </div>
                     </form>
                     <br> Hasil BMI diantara 23 dan 25 </br>
                     <p>Anda berada di dalam kategori overweight atau berat badan berlebih. Cara terbaik untuk menurunkan berat badan adalah dengan mengatur kalori makanan yang dikonsumsi dan berolahraga. Jika BMI Anda berada dalam kategori ini maka Anda dianjurkan untuk menurunkan berat badan hingga batas normal.</p>
-                    <button class="konsultasi">Konsultasi Ahli Gizi Via Aplikasi</button>
-                    <button class="registrasi">Registrasi Online Ahli Gizi</button>
+                    <button class="konsultasi" onclick="showAlertKonsulGizi()">Konsultasi Ahli Gizi Via Aplikasi</button>
+                    <button class="registrasi" onclick="showAlertRegistAhli()">Registrasi Online Ahli Gizi</button>
                     <br> BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan risiko penyakit seseorang. Anda perlu konsultasi lebih lanjut mengenai risiko dan kekhawatiran Anda terkait dengan berat badan Anda.</br>
 
             <form style="text-align: center;"> 
@@ -80,8 +78,8 @@
                 <p>Sakit Jantung</p>
                 <p>Osteoarthitis</p>
 
-                <button class="konsultasi">Konsultasi Dokter Via Aplikasi</button>
-                <button class="registrasi">Registrasi Online Sekarang</button>
+                <button class="konsultasi" onclick="showAlertKonsul()">Konsultasi Dokter Via Aplikasi</button>
+                <button class="registrasi" onclick="showAlertRegist()">Registrasi Online Sekarang</button>
                 </div>
             </form>
             </header>
