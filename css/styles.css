@@ -1,20 +1,58 @@
-/*style.css*/
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: wheat;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.info-section, .result-section {
+    flex: 1 1 300px;
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-section, .result-section {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
 .main-title {
     text-align: center;
     border: none;
 }
+
 main {
     display: flex;
     background-color: cornsilk;
     border-radius: 4px;
     border: none;
 }
+
 form {
     padding: 12px;
     background-color: beige;
     border: none;
     border-radius: 4px;
 } 
+
 aside {
     padding: 48px;
 }
@@ -60,8 +98,7 @@ aside {
     cursor: pointer;
 }
 
-input[type=number] 
-{
+input[type=number] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -95,7 +132,6 @@ input[type=number]
     border-radius: 4px;
     cursor: pointer;
 }
-
 
 .btn-reset {
     background-color: rgb(218, 4, 47);
@@ -138,19 +174,22 @@ input[type=number]
 .btn-download:hover {
     background-color: #45a049;
 }
+
 .btn-hitung:hover {
     background-color: #45a049;
 }
+
 .btn-reset:hover {
     background-color: rgb(175, 1, 36);
 }
+
 .registrasi:hover {
     background-color: #45a049;
 }
+
 .konsultasi:hover {
     background-color: #45a049;
 }
-
 
 h4 {
     display: block;
@@ -174,5 +213,5 @@ br {
 }
 
 footer {
-text-align: center;
+    text-align: center;
 }
