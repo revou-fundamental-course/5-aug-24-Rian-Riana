@@ -22,7 +22,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 768px) { /* membuat tampilan menjadi responsif ketika dalam ukuran tertentu*/
+@media (max-width: 768px) { /* membuat tampilan menjadi responsif ketika dalam ukuran 768*/
     .container {
         flex-direction: column;
         align-items: center;
