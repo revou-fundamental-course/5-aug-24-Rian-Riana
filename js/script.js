@@ -1,7 +1,7 @@
 // script.js
 function calculateBMI(event) {
 
-
+ 
     var height = document.getElementById('height').value / 100;
     var weight = document.getElementById('weight').value;
 
