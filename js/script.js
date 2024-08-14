@@ -1,13 +1,13 @@
-// script.js
+// script.js adalah tempat memadukan tampilan dengan rumus logika yang dibutuhkan agar tampilan lebih dinamis
 function calculateBMI(event) {
 
- 
+ // fuction bertugas memberikan fungsi pengoprasian pada objek yang dikaitkan dari html
     var height = document.getElementById('height').value / 100;
     var weight = document.getElementById('weight').value;
 
-    console.log()
+    console.log() // debugging untuk jaga jaga kemungkinan bug
     
-    if (height > 0 && weight > 0) {
+    if (height > 0 && weight > 0) { //menggunakan rumus if else untuk merumuskan kalkulasi dan langkah prediktif lainnya
         var bmi = weight / (height * height);
         var resultText = '';
         var categoryText = '';
@@ -39,7 +39,7 @@ function calculateBMI(event) {
 
 
 function resetBMI() {
-    document.getElementById('height').value = '';
+    document.getElementById('height').value = ''; // document.getElemetById bertugas mengaitkan element berdasarkan id yang dibuat di html
     document.getElementById('age').value = '';
     document.getElementById('weight').value = '';
     document.getElementById('bmi-result').innerText = '';
@@ -47,7 +47,7 @@ function resetBMI() {
     document.getElementById('bmi-category').innerText = '';
 }
 function showAlertKonsul() {
-    alert("Silahkan konsultasi ke dokter terdekat") ;
+    alert("Silahkan konsultasi ke dokter terdekat") ; //alert berfungsi memberikan pop-up notifikasi
 }
 function showAlertRegist() {
     alert("Silahkan registrasi disini") ;
