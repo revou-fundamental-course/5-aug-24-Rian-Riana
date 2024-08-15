@@ -118,7 +118,7 @@ aside {
 .result-section {
     margin-top: 20px;
     text-align: center;
-    font-size: 18px;
+    font-size: 0.9rem;
     color: #333;
 }
 
@@ -128,7 +128,7 @@ aside {
     color: white;
     background-color: #4CAF50;
     padding: 4px;
-    font-size: 12px;
+    font-size: 0.9rem;
     margin: 4px;
     cursor: pointer;
 }
@@ -139,7 +139,7 @@ aside {
     color: white;
     background-color: #4CAF50;
     padding: 4px;
-    font-size: 12px;
+    font-size: 0.9rem;
     margin: 4px;
     cursor: pointer;
 }
@@ -153,7 +153,7 @@ input[type=number] {
     border-radius: 4px;
     box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 14px;
+    font-size: 0.9rem;
 }
 
 .button {
@@ -174,7 +174,7 @@ input[type=number] {
     background-color: #4CAF50;
     border: none;
     padding: 4px;
-    font-size: 12px;
+    font-size: 0.9rem;
     border-radius: 4px;
     cursor: pointer;
 }
@@ -182,7 +182,7 @@ input[type=number] {
 .btn-reset {
     background-color: rgb(218, 4, 47);
     padding: 4px;
-    font-size: 12px;
+    font-size: 0.9rem;
     border-radius: 4px;
     border: none;
     cursor: pointer;
@@ -197,13 +197,13 @@ input[type=number] {
 }
 
 .bmi-value {
-    font-size: 36px;
+    font-size: 0.9rem;
     font-weight: bold;
     color: #333;
 }
 
 .bmi-category {
-    font-size: 18px;
+    font-size: 0.9rem;
     color: #666;
 }
 
