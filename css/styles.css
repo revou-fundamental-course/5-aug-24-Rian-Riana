@@ -1,6 +1,5 @@
 /* styles.css adalah tempat untuk memberikan sentuhan design terhadap tampilan yang telah dibuat*/
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: wheat;
@@ -26,7 +25,13 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 768px) { /* membuat tampilan menjadi responsif ketika dalam ukuran 768*/
+@media only screen and (max-width: 768px) { /* membuat tampilan menjadi responsif ketika dalam ukuran 768*/
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: wheat;
+    }
+    
     main {
         flex-direction: column;
         align-items: center;
@@ -36,6 +41,22 @@ body {
     .container {
         flex-direction: column;
         align-items: center;
+    }
+
+    ul {
+        font-size: 0.9rem;
+    }
+    
+    .ket-hasil .fitur .penyakit{
+        text-align: justify;
+        text-indent: 30px;
+        font-size: 0.9rem;
+    }
+
+    .list-penyakit {
+        text-align: center;
+        font-size: 0.9rem;
+        text-indent: 30px;
     }
 
     p {
@@ -48,6 +69,198 @@ body {
         width: 100%;
         margin: 10px 0;
     }
+
+    .radio-btn {
+        text-indent: 0;
+    }
+
+    .input-section {
+        width: 100%;
+        margin: 10px;
+    }
+
+
+.main-title {
+    text-align: center;
+    border: none;
+}
+
+main {
+    display: flex;
+    background-color: cornsilk;
+    border-radius: 4px;
+    border: none;
+}
+
+form {
+    padding: 12px;
+    background-color: beige;
+    border: none;
+    border-radius: 4px;
+} 
+
+aside {
+    padding: 48px;
+}
+
+.input-section {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+}
+
+.result-section {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+}
+
+.registrasi {
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color: #4CAF50;
+    padding: 4px;
+    font-size: 12px;
+    margin: 4px;
+    cursor: pointer;
+}
+
+.konsultasi {
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color: #4CAF50;
+    padding: 4px;
+    font-size: 12px;
+    margin: 4px;
+    cursor: pointer;
+}
+
+input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+}
+
+.button {
+    border: none;
+    background-color: beige;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-bb {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.btn-hitung {
+    background-color: #4CAF50;
+    border: none;
+    padding: 4px;
+    font-size: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-reset {
+    background-color: rgb(218, 4, 47);
+    padding: 4px;
+    font-size: 12px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.result-container {
+    text-align: center;
+    background-color: #f0f8ff; 
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.bmi-value {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+}
+
+.bmi-category {
+    font-size: 18px;
+    color: #666;
+}
+
+.btn-download {
+    background-color: #4CAF50; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn-download:hover {
+    background-color: #45a049;
+}
+
+.btn-hitung:hover {
+    background-color: #45a049;
+}
+
+.btn-reset:hover {
+    background-color: rgb(175, 1, 36);
+}
+
+.registrasi:hover {
+    background-color: #45a049;
+}
+
+.konsultasi:hover {
+    background-color: #45a049;
+}
+
+h4 {
+    display: block;
+    margin-block-start: 2px;
+    margin-block-end: 2px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+br {
+    margin: 1px;
+    padding: 1px;
+}
+
+footer {
+    text-align: center;
+}
 }
 
 .main-title {

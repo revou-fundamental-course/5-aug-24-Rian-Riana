@@ -19,7 +19,7 @@
                 <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. bagaimana denganmu ? Yuk, hitung sekarang di kalkulator BMI.</p>
             </article>
             <form>
-                <div>
+                <div class="radio-btn">
                     <h3>Jenis Kelamin</h3> 
                     <input type="radio" id="Laki-Laki" name="Jenis-Kelamin" value="Pria">Pria<label for="Pria"></label>
                     <input type="radio" id="Perempuan" name="Jenis-Kelamin" value="Wanita">Wanita<label for="Wanita"></label>
@@ -37,13 +37,14 @@
                 </div>
             </form>
 
-            <article>
+            <article class="Fitur">
                 <header>
                     <h2>Keunggulan Fitur</h2>
-                    <p>1. Menghitung berat badan</p>
-                    <p>2. Menentukan kategori berat badan ideal atau tidak</p>
-                    <p>3. Mempersiapkan program penurunan berat badan</p>
-                    <br>
+                    <ul>
+                    <li> Menghitung berat badan</li>
+                    <li> Menentukan kategori berat badan ideal atau tidak</li>
+                    <li> Mempersiapkan program penurunan berat badan</li>
+                    </ul>
                     <p>Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.</p>
                     <br>
                     <p>Kalkulator akan memberikan Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum, Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/M<sup>2</sup>.</p>
@@ -63,19 +64,23 @@
                             <button class="btn-download">Download Hasil BMI</button>
                         </div>
                     </form>
-                    <br> Hasil BMI diantara 23 dan 25 </br>
-                    <p>Anda berada di dalam kategori overweight atau berat badan berlebih. Cara terbaik untuk menurunkan berat badan adalah dengan mengatur kalori makanan yang dikonsumsi dan berolahraga. Jika BMI Anda berada dalam kategori ini maka Anda dianjurkan untuk menurunkan berat badan hingga batas normal.</p>
-                    <button class="konsultasi" onclick="showAlertKonsulGizi()">Konsultasi Ahli Gizi Via Aplikasi</button>
-                    <button class="registrasi" onclick="showAlertRegistAhli()">Registrasi Online Ahli Gizi</button>
-                    <br> BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan risiko penyakit seseorang. Anda perlu konsultasi lebih lanjut mengenai risiko dan kekhawatiran Anda terkait dengan berat badan Anda.</br>
+                    <div class="ket-hasil">
+                     <br>Hasil BMI diantara 23 dan 25 </br>
+                        <p>Anda berada di dalam kategori overweight atau berat badan berlebih. Cara terbaik untuk menurunkan berat badan adalah dengan mengatur kalori makanan yang dikonsumsi dan berolahraga. Jika BMI Anda berada dalam kategori ini maka Anda dianjurkan untuk menurunkan berat badan hingga batas normal.</p>
+                        <button class="konsultasi" onclick="showAlertKonsulGizi()">Konsultasi Ahli Gizi Via Aplikasi</button>
+                        <button class="registrasi" onclick="showAlertRegistAhli()">Registrasi Online Ahli Gizi</button>
+                        <p> BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan risiko penyakit seseorang. Anda perlu konsultasi lebih lanjut mengenai risiko dan kekhawatiran Anda terkait dengan berat badan Anda.</p>
+                    </div>
 
             <form style="text-align: center;">  <!--menggunakan inerline css-->
-                <div> 
+                <div class="penyakit"> 
                 <h4> Beberapa penyakit yang berasal dari kegemukan</h4>
-                <p>Diabetes</p>
-                <p>Hipertensi</p>
-                <p>Sakit Jantung</p>
-                <p>Osteoarthitis</p>
+                <br class="list-penyakit">
+                 <br>Diabetes</br>
+                 <br>Hipertensi</br>
+                 <br>Sakit Jantung</br>
+                 <br>Osteoarthitis</br>
+                </br>
 
                 <button class="konsultasi" onclick="showAlertKonsul()">Konsultasi Dokter Via Aplikasi</button>
                 <button class="registrasi" onclick="showAlertRegist()">Registrasi Online Sekarang</button>
