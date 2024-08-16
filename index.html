@@ -24,10 +24,10 @@
             <form>
                 <div class="radio-btn">
                     <h3>Jenis Kelamin</h3> 
-                    <input type="radio" id="pria" name="Jenis-Kelamin">Pria
-                    <label for="pria"></label>
-                    <input type="radio" id="wanita" name="Jenis-Kelamin">Wanita
-                    <label for="wanita"></label>
+                    <input type="radio" id="pria" name="Jenis-Kelamin">
+                    <label for="pria">Pria</label>
+                    <input type="radio" id="wanita" name="Jenis-Kelamin">
+                    <label for="wanita">Wanita</label>
                 </div>
 
                 <div class="input-section">
@@ -67,18 +67,18 @@
                             <h4 style="color: #666;" id="bmi-result" class="bmi-result">00.00</h4>
                             <p id="bmi-value" class="bmi-value"></p>
                             <p id="bmi-category" class="bmi-category"></p>
-                            <button class="btn-download">Download Hasil BMI</button>
+                            <button type="button" class="btn-download">Download Hasil BMI</button>
                         </div>
                     </form>
                     <div class="ket-hasil">
                      <br>Hasil BMI diantara 23 dan 25 </br>
                         <p>Anda berada di dalam kategori overweight atau berat badan berlebih. Cara terbaik untuk menurunkan berat badan adalah dengan mengatur kalori makanan yang dikonsumsi dan berolahraga. Jika BMI Anda berada dalam kategori ini maka Anda dianjurkan untuk menurunkan berat badan hingga batas normal.</p>
-                        <button class="konsultasi" onclick="showalertkonsulgizi()">Konsultasi Ahli Gizi Via Aplikasi</button>
-                        <button class="registrasi" onclick="showalertregistahli()">Registrasi Online Ahli Gizi</button>
+                        <button type="button" class="konsultasi" onclick="showalertkonsulgizi()">Konsultasi Ahli Gizi Via Aplikasi</button>
+                        <button type="button" class="registrasi" onclick="showalertregistahli()">Registrasi Online Ahli Gizi</button>
                         <p>BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan risiko penyakit seseorang. Anda perlu konsultasi lebih lanjut mengenai risiko dan kekhawatiran Anda terkait dengan berat badan Anda.</p>
                     </div>
 
-            <form style="text-align: center;">  <!--menggunakan inerline css-->
+            <form id="penyebabpenyakit" class="penyebabpenyakit">  <!--menggunakan inerline css-->
                 <div class="penyakit"> 
                 <h4>Beberapa penyakit yang berasal dari kegemukan</h4>
                 <br class="list-penyakit">
@@ -88,8 +88,8 @@
                  <br>Osteoarthitis</br>
                 </br>
 
-                <button class="konsultasi" onclick="showalertkonsul()">Konsultasi Dokter Via Aplikasi</button>
-                <button class="registrasi" onclick="showalertregist()">Registrasi Online Sekarang</button>
+                <button type="button" class="konsultasi" onclick="showalertkonsul()">Konsultasi Dokter Via Aplikasi</button>
+                <button type="button" class="registrasi" onclick="showalertregist()">Registrasi Online Sekarang</button>
                 </div>
             </form>
             </header>
